@@ -1,7 +1,9 @@
 # Credit_Card_Financial_Weekly_Dashboard
 Power Bi dashboard
+
 Project Objective:
 To develop a comprehensive credit card weekly dashboard that provides real time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
+
 
 Import data to SQL Database:
 Prepare CSV Files
@@ -17,6 +19,7 @@ Week_num2 = WEEKNUM('Credit Card Detail'[Week_Start_Date])
 Current_Week_Revenue = CALCULATE( SUM('Credit Card Detail'[Revenue]), FILTER( ALL('Credit Card Detail'), 'Credit Card Detail'[Week_num2] = MAX('Credit Card Detail'[Week_num2])))
 
 Previous_Week_Revenue = CALCULATE( SUM('Credit Card Detail'[Revenue]), FILTER( ALL('Credit Card Detail'), 'Credit Card Detail'[Week_num2] = MAX('Credit Card Detail'[Week_num2])-1))
+
 
 Project Insights: Week 53(31 Dec):
 Week over Week Change:
